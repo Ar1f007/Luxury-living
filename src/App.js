@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
-import { Navbar } from './components/shared';
-import { MobileMenu } from './components/shared/Navbar/MobileMenu';
+import { Navbar, MobileMenu } from './components';
+
 import { Home } from './pages';
 
 function App() {

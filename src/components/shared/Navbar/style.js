@@ -16,9 +16,20 @@ export const Nav = styled.nav`
     align-items: center;
     justify-content: space-between;
 
+    @media (min-width: 767px) {
+      margin-left: -20px;
+    }
+
+    @media (min-width: 1024px) {
+      margin-left: -80px;
+    }
+
+    @media (min-width: 1440px) {
+      margin-left: -40px;
+    }
+
     .logo {
       width: 80px;
-      margin-left: -5px;
     }
   }
 
@@ -56,6 +67,12 @@ export const Nav = styled.nav`
     .nav-header a:focus-visible {
       background: transparent;
     }
+
+    .navbar-header a {
+      margin-left: -15px;
+      border: 1px solid red;
+    }
+
     .nav-header .logo {
       width: 100px;
     }
@@ -92,7 +109,7 @@ export const Nav = styled.nav`
       color: #f2ebe9;
 
       :hover {
-        background: #2a2165;
+        background: #302572;
       }
 
       :focus-visible {

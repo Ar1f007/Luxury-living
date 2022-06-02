@@ -11,6 +11,10 @@ export const Nav = styled.nav`
   margin-inline: auto;
   padding: 1rem 0;
 
+  @media (min-width: 769px) and (max-width: 1366px) {
+    padding-inline: 2rem;
+  }
+
   .nav-header {
     display: flex;
     align-items: center;

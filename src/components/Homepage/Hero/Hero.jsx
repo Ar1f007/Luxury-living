@@ -1,7 +1,6 @@
 import heroImg from '../../../assets/Image/pierre-chatel-innocenti-AlSlE8IAjZo-unsplash 1.png';
 
 import { Header, Paragraph, Section, Title, Wrapper } from './styles';
-
 import { Button } from '../../../components';
 
 export const Hero = () => {
@@ -11,7 +10,7 @@ export const Hero = () => {
         <Section>
           <img
             src={heroImg}
-            alt=""
+            alt="hero"
             className="w-full max-w-xl rounded
         "
           />
@@ -21,7 +20,7 @@ export const Hero = () => {
           <div>
             <Title>We Build Your Dream</Title>
             <Paragraph>
-              Online Easte Agency, the mordern way to sell your own home, You can use Griffin
+              Online Estate Agency, the modern way to sell your own home, You can use Griffin
               Residential to market your property
             </Paragraph>
 

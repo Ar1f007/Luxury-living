@@ -10,7 +10,7 @@ export const Heading = ({ text, heading }) => {
 };
 
 const Header = tw.header`
-text-center mb-5 max-w-[580px] mx-auto
+text-center mb-5 max-w-[650px] mx-auto
 `;
 const P = tw.p`text-sm text-[#251D58] capitalize`;
 const H2 = tw.h2`

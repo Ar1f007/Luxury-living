@@ -5,7 +5,7 @@ export const Card = ({ item }) => {
   const { title, img, location } = item;
   return (
     <Figure>
-      <img src={img} alt={title} className="w-full  h-96 object-cover" />
+      <img src={img} alt={title} className="w-full h-96 object-cover" />
       <Title>{title}</Title>
       <Div>
         <MdLocationPin />

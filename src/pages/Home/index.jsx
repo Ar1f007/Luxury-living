@@ -1,4 +1,4 @@
-import { FeaturedDesign, Hero, Services, Testimonial } from '../../components';
+import { Contact, FeaturedDesign, Hero, Services, Testimonial } from '../../components';
 
 export const Home = () => {
   return (
@@ -7,6 +7,7 @@ export const Home = () => {
       <FeaturedDesign />
       <Services />
       <Testimonial />
+      <Contact />
     </>
   );
 };

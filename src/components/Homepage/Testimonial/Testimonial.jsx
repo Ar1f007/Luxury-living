@@ -1,7 +1,6 @@
 import tw from 'twin.macro';
 import { Heading } from '../../../components';
 import { AiFillStar } from 'react-icons/ai';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, A11y, Autoplay } from 'swiper';
 import 'swiper/css/pagination';
@@ -39,183 +38,214 @@ export const Testimonial = () => {
                 }}
               >
                 <SwiperSlide>
-                  <div className="swiper-slide bg-[#fff]">
-                    <blockquote className="p-8">
-                      <div className="flex items-center">
+                  <Container>
+                    <Blockquote>
+                      <Reviewer>
                         <img
                           src="https://www.hyperui.dev/photos/man-4.jpeg"
                           alt=""
                           className="object-cover w-16 h-16 rounded-full"
                         />
 
-                        <div className="ml-4 text-sm">
-                          <p className="font-medium">Jeff Wezos</p>
-                          <p className="mt-1">CEO of Shipping Company</p>
-                        </div>
-                      </div>
+                        <ReviewerInfo>
+                          <Name>Jeff Wezos</Name>
+                          <Designation>CEO of Shipping Company</Designation>
+                        </ReviewerInfo>
+                      </Reviewer>
 
-                      <p className="relative mt-4 text-gray-500">
+                      <TestimonialText>
                         <span className="text-xl">&ldquo;</span>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni assumenda
                         officiis sit amet itaque eveniet accusantium corporis tempora, soluta
                         perspiciatis rerum, ratione animi nemo inventore repellat, commodi in esse
                         quisquam.
                         <span className="text-xl">&rdquo;</span>
-                      </p>
-                    </blockquote>
+                      </TestimonialText>
+                    </Blockquote>
 
-                    <div class="-mt-4 pb-6 pl-8 flex gap-.8 text-[22px] font-bold text-[#FFAC0C]">
+                    <Ratings>
                       <AiFillStar />
                       <AiFillStar />
                       <AiFillStar />
                       <AiFillStar />
                       <AiFillStar />
-                    </div>
-                  </div>
+                    </Ratings>
+                  </Container>
                 </SwiperSlide>
-
                 <SwiperSlide>
-                  <div className="swiper-slide bg-[#fff]">
-                    <blockquote className="p-8">
-                      <div className="flex items-center">
+                  <Container>
+                    <Blockquote>
+                      <Reviewer>
                         <img
                           src="https://www.hyperui.dev/photos/man-4.jpeg"
                           alt=""
                           className="object-cover w-16 h-16 rounded-full"
                         />
 
-                        <div className="ml-4 text-sm">
-                          <p className="font-medium">Jeff Wezos</p>
-                          <p className="mt-1">CEO of Shipping Company</p>
-                        </div>
-                      </div>
+                        <ReviewerInfo>
+                          <Name>Jeff Wezos</Name>
+                          <Designation>CEO of Shipping Company</Designation>
+                        </ReviewerInfo>
+                      </Reviewer>
 
-                      <p className="relative mt-4 text-gray-500">
+                      <TestimonialText>
                         <span className="text-xl">&ldquo;</span>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni assumenda
                         officiis sit amet itaque eveniet accusantium corporis tempora, soluta
                         perspiciatis rerum, ratione animi nemo inventore repellat, commodi in esse
                         quisquam.
                         <span className="text-xl">&rdquo;</span>
-                      </p>
-                    </blockquote>
+                      </TestimonialText>
+                    </Blockquote>
 
-                    <div class="-mt-4 pb-6 pl-8 flex gap-.8 text-[22px] font-bold text-[#FFAC0C]">
+                    <Ratings>
                       <AiFillStar />
                       <AiFillStar />
                       <AiFillStar />
                       <AiFillStar />
                       <AiFillStar />
-                    </div>
-                  </div>
+                    </Ratings>
+                  </Container>
                 </SwiperSlide>
-
                 <SwiperSlide>
-                  <div className="swiper-slide bg-[#fff]">
-                    <blockquote className="p-8">
-                      <div className="flex items-center">
+                  <Container>
+                    <Blockquote>
+                      <Reviewer>
                         <img
                           src="https://www.hyperui.dev/photos/man-4.jpeg"
                           alt=""
                           className="object-cover w-16 h-16 rounded-full"
                         />
 
-                        <div className="ml-4 text-sm">
-                          <p className="font-medium">Jeff Wezos</p>
-                          <p className="mt-1">CEO of Shipping Company</p>
-                        </div>
-                      </div>
+                        <ReviewerInfo>
+                          <Name>Jeff Wezos</Name>
+                          <Designation>CEO of Shipping Company</Designation>
+                        </ReviewerInfo>
+                      </Reviewer>
 
-                      <p className="relative mt-4 text-gray-500">
+                      <TestimonialText>
                         <span className="text-xl">&ldquo;</span>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni assumenda
                         officiis sit amet itaque eveniet accusantium corporis tempora, soluta
                         perspiciatis rerum, ratione animi nemo inventore repellat, commodi in esse
                         quisquam.
                         <span className="text-xl">&rdquo;</span>
-                      </p>
-                    </blockquote>
+                      </TestimonialText>
+                    </Blockquote>
 
-                    <div class="-mt-4 pb-6 pl-8 flex gap-.8 text-[22px] font-bold text-[#FFAC0C]">
+                    <Ratings>
                       <AiFillStar />
                       <AiFillStar />
                       <AiFillStar />
                       <AiFillStar />
                       <AiFillStar />
-                    </div>
-                  </div>
+                    </Ratings>
+                  </Container>
                 </SwiperSlide>
-
                 <SwiperSlide>
-                  <div className="swiper-slide bg-[#fff]">
-                    <blockquote className="p-8">
-                      <div className="flex items-center">
+                  <Container>
+                    <Blockquote>
+                      <Reviewer>
                         <img
                           src="https://www.hyperui.dev/photos/man-4.jpeg"
                           alt=""
                           className="object-cover w-16 h-16 rounded-full"
                         />
 
-                        <div className="ml-4 text-sm">
-                          <p className="font-medium">Jeff Wezos</p>
-                          <p className="mt-1">CEO of Shipping Company</p>
-                        </div>
-                      </div>
+                        <ReviewerInfo>
+                          <Name>Jeff Wezos</Name>
+                          <Designation>CEO of Shipping Company</Designation>
+                        </ReviewerInfo>
+                      </Reviewer>
 
-                      <p className="relative mt-4 text-gray-500">
+                      <TestimonialText>
                         <span className="text-xl">&ldquo;</span>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni assumenda
                         officiis sit amet itaque eveniet accusantium corporis tempora, soluta
                         perspiciatis rerum, ratione animi nemo inventore repellat, commodi in esse
                         quisquam.
                         <span className="text-xl">&rdquo;</span>
-                      </p>
-                    </blockquote>
+                      </TestimonialText>
+                    </Blockquote>
 
-                    <div class="-mt-4 pb-6 pl-8 flex gap-.8 text-[22px] font-bold text-[#FFAC0C]">
+                    <Ratings>
                       <AiFillStar />
                       <AiFillStar />
                       <AiFillStar />
                       <AiFillStar />
                       <AiFillStar />
-                    </div>
-                  </div>
+                    </Ratings>
+                  </Container>
                 </SwiperSlide>
-
                 <SwiperSlide>
-                  <div className="swiper-slide bg-[#fff]">
-                    <blockquote className="p-8">
-                      <div className="flex items-center">
+                  <Container>
+                    <Blockquote>
+                      <Reviewer>
                         <img
                           src="https://www.hyperui.dev/photos/man-4.jpeg"
                           alt=""
                           className="object-cover w-16 h-16 rounded-full"
                         />
 
-                        <div className="ml-4 text-sm">
-                          <p className="font-medium">Jeff Wezos</p>
-                          <p className="mt-1">CEO of Shipping Company</p>
-                        </div>
-                      </div>
+                        <ReviewerInfo>
+                          <Name>Jeff Wezos</Name>
+                          <Designation>CEO of Shipping Company</Designation>
+                        </ReviewerInfo>
+                      </Reviewer>
 
-                      <p className="relative mt-4 text-gray-500">
+                      <TestimonialText>
                         <span className="text-xl">&ldquo;</span>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni assumenda
                         officiis sit amet itaque eveniet accusantium corporis tempora, soluta
                         perspiciatis rerum, ratione animi nemo inventore repellat, commodi in esse
                         quisquam.
                         <span className="text-xl">&rdquo;</span>
-                      </p>
-                    </blockquote>
+                      </TestimonialText>
+                    </Blockquote>
 
-                    <div class="-mt-4 pb-6 pl-8 flex gap-.8 text-[22px] font-bold text-[#FFAC0C]">
+                    <Ratings>
                       <AiFillStar />
                       <AiFillStar />
                       <AiFillStar />
                       <AiFillStar />
                       <AiFillStar />
-                    </div>
-                  </div>
+                    </Ratings>
+                  </Container>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Container>
+                    <Blockquote>
+                      <Reviewer>
+                        <img
+                          src="https://www.hyperui.dev/photos/man-4.jpeg"
+                          alt=""
+                          className="object-cover w-16 h-16 rounded-full"
+                        />
+
+                        <ReviewerInfo>
+                          <Name>Jeff Wezos</Name>
+                          <Designation>CEO of Shipping Company</Designation>
+                        </ReviewerInfo>
+                      </Reviewer>
+
+                      <TestimonialText>
+                        <span className="text-xl">&ldquo;</span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni assumenda
+                        officiis sit amet itaque eveniet accusantium corporis tempora, soluta
+                        perspiciatis rerum, ratione animi nemo inventore repellat, commodi in esse
+                        quisquam.
+                        <span className="text-xl">&rdquo;</span>
+                      </TestimonialText>
+                    </Blockquote>
+
+                    <Ratings>
+                      <AiFillStar />
+                      <AiFillStar />
+                      <AiFillStar />
+                      <AiFillStar />
+                      <AiFillStar />
+                    </Ratings>
+                  </Container>
                 </SwiperSlide>
               </Swiper>
             </div>
@@ -229,3 +259,11 @@ export const Testimonial = () => {
 const Wrapper = tw.section`
 bg-[#fcf9f9] mt-16 xl:mt-28 py-16
 `;
+const Container = tw.div`bg-[#fff]`;
+const Blockquote = tw.blockquote`p-10`;
+const Reviewer = tw.div`flex items-center`;
+const ReviewerInfo = tw.div`ml-4 text-sm`;
+const Name = tw.p`font-medium`;
+const Designation = tw.p`mt-1`;
+const TestimonialText = tw.p`relative mt-4 text-gray-500`;
+const Ratings = tw.div`-mt-4 pb-6 pl-8 flex gap-[2] text-[22px] font-bold text-[#FFAC0C]`;

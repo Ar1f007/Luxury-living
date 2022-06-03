@@ -1,5 +1,5 @@
 import { Wrapper } from '../FeaturedDesign/styles';
-import { Heading } from '../../../components';
+import { Heading } from '../..';
 import { Form } from './Form';
 
 export const Contact = () => {

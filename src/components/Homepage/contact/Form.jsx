@@ -1,5 +1,5 @@
 import tw from 'twin.macro';
-import { Button } from '../../../components';
+import { Button } from '../..';
 
 export const Form = () => {
   return (
@@ -34,7 +34,7 @@ export const Form = () => {
   );
 };
 
-const Container = tw.form`grid grid-cols-1 gap-5 w-full max-w-2xl mx-auto py-16 px-2`;
+const Container = tw.form`grid grid-cols-1 gap-5 w-full max-w-2xl mx-auto py-16 lg:pb-24 px-2`;
 
 const Input = tw.input`bg-[#F1F3F6] w-full p-4 text-sm border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#251D58]`;
 

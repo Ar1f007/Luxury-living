@@ -11,7 +11,7 @@ export const Hero = () => {
           <img
             src={heroImg}
             alt="hero"
-            className="w-full max-w-xl rounded
+            className="w-full max-w-xl rounded bg-transparent
         "
           />
         </Section>

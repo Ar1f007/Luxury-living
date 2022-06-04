@@ -1,7 +1,7 @@
 import tw from 'twin.macro';
 import styled from 'styled-components';
 
-export const Container = tw.section`min-h-screen py-16 w-full max-w-screen-sm mx-auto px-4 lg:px-0`;
+export const Container = tw.section`py-16 w-full max-w-screen-sm mx-auto px-4 lg:px-0`;
 export const FormContainer = tw.div`border shadow-sm border-[#ababab] p-6 lg:p-10 rounded w-full grid grid-cols-1`;
 export const Title = tw.h1`font-bold text-2xl text-[#2a2a2a] mb-14`;
 export const FormRow = tw.div`relative not-last-of-type:mb-12`;
@@ -50,6 +50,11 @@ export const Button = styled.button`
 
   :hover {
     background-color: #302572;
+  }
+
+  :focus {
+    outline: 3px solid #302572;
+    outline-offset: 3px;
   }
 `;
 

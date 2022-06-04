@@ -37,7 +37,7 @@ export const Register = () => {
           <Button type="submit">Create an account</Button>
         </form>
         <P>
-          Already have an account ? <Link to="/">Login</Link>
+          Already have an account ? <Link to="/login">Login</Link>
         </P>
       </FormContainer>
 

@@ -5,25 +5,25 @@ export const Form = () => {
   return (
     <Container>
       <div>
-        <label className="sr-only" for="name">
+        <label className="sr-only" htmlFor="name">
           Name
         </label>
         <Input type="text" placeholder="Name" id="name" />
       </div>
 
       <DoubleColumn>
-        <label className="sr-only" for="email">
+        <label className="sr-only" htmlFor="email">
           Email address
         </label>
         <Input type="email" placeholder="Email address" id="email" />
 
-        <label className="sr-only" for="phone">
+        <label className="sr-only" htmlFor="phone">
           Phone number
         </label>
         <Input type="tel" placeholder="Phone number" id="phone" />
       </DoubleColumn>
       <div>
-        <label className="sr-only" for="message">
+        <label className="sr-only" htmlFor="message">
           Message
         </label>
         <Textarea placeholder="Message" id="message"></Textarea>

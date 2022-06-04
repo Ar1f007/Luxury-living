@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const Container = tw.section`py-16 w-full max-w-screen-sm mx-auto px-4 lg:px-0`;
 export const FormContainer = tw.div`border shadow-sm border-[#ababab] p-6 lg:p-10 rounded w-full grid grid-cols-1`;
-export const Title = tw.h1`font-bold text-2xl text-[#2a2a2a] mb-14`;
+export const Title = tw.h1`font-bold text-xl lg:text-2xl text-[#2a2a2a] mb-14`;
 export const FormRow = tw.div`relative not-last-of-type:mb-12`;
 
 export const Label = styled.label`
@@ -59,6 +59,7 @@ export const Button = styled.button`
 `;
 
 export const P = styled.p`
+  font-size: 0.9rem;
   text-align: center;
   color: #2a2a2a;
   a {

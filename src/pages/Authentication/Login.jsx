@@ -6,7 +6,7 @@ export const Login = () => {
   return (
     <Container>
       <FormContainer>
-        <Title>Welcome, Login to your account</Title>
+        <Title>Welcome! Login to your account</Title>
 
         <form>
           <FormRow>
@@ -22,7 +22,7 @@ export const Login = () => {
           <Button type="submit">Login</Button>
         </form>
         <P>
-          Don't have an account ? <Link to="/register">Create one</Link>
+          Don't have an account? <Link to="/register">Create one</Link>
         </P>
       </FormContainer>
 

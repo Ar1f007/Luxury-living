@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Container, FormContainer, FormRow, Title, Input, Label, Button, P } from './styles';
+import { Container, FormContainer, FormRow, Title, Input, Label, P, Button } from './styles';
 import { Divider, SocialLogin } from '../../components';
 
 export const Register = () => {
@@ -10,13 +10,8 @@ export const Register = () => {
 
         <form>
           <FormRow>
-            <Input type="text" id="firstName" required />
-            <Label htmlFor="firstName">First Name</Label>
-          </FormRow>
-
-          <FormRow>
-            <Input type="text" id="lastName" required />
-            <Label htmlFor="lastName">Last Name</Label>
+            <Input type="text" id="name" required />
+            <Label htmlFor="name">Full Name</Label>
           </FormRow>
 
           <FormRow>
@@ -34,10 +29,10 @@ export const Register = () => {
             <Label htmlFor="confirmPassword">Confirm Password</Label>
           </FormRow>
 
-          <Button type="submit">Create an account</Button>
+          <Button type="submit">Create Account</Button>
         </form>
         <P>
-          Already have an account ? <Link to="/login">Login</Link>
+          Already have an account? <Link to="/login">Login</Link>
         </P>
       </FormContainer>
 

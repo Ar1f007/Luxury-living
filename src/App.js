@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import { Navbar, MobileMenu, Footer } from './components';
 
-import { Home } from './pages';
+import { Home, Register } from './pages';
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
       <MobileMenu />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Register />} />
       </Routes>
 
       <Footer />

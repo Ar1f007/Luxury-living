@@ -3,6 +3,8 @@ export { MobileMenu } from './shared/Navbar/MobileMenu';
 export { Button } from './shared/Button/Button';
 export { Heading } from './shared/Heading/Heading';
 export { Footer } from './shared/Footer/Footer';
+export { Divider } from './shared/Divider/Divider';
+export { SocialLogin } from './shared/SocialLogin/SocialLogin';
 
 export { Hero } from './Homepage/Hero/Hero';
 export { FeaturedDesign } from './Homepage/FeaturedDesign/FeaturedDesign';

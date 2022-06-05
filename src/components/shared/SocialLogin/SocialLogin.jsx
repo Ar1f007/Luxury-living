@@ -1,14 +1,14 @@
 import tw from 'twin.macro';
+import auth from '../../../config/firebase';
+import fetch from '../../../config/axios';
+import useUserContext from '../../../context/userContext/userContext';
+
 import { BsFacebook } from 'react-icons/bs';
 import { FcGoogle } from 'react-icons/fc';
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { alert, splitFirebaseErrorMsg } from '../../../utils';
 import { useEffect } from 'react';
-
-import auth from '../../../config/firebase';
-import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import useUserContext from '../../../context/userContext/userContext';
 
 const googleIcon = <FcGoogle className="w-9 h-9" />;
 const facebookIcon = <BsFacebook className="w-9 h-9 text-[#3076FF]" />;
@@ -29,14 +29,13 @@ export const SocialLogin = () => {
     const fnc = async () => {
       try {
         if (user !== undefined) {
-          const res = await axios.put('http://localhost:5000/api/v1/users', {
+          const res = await fetch.put('/users', {
             email: user?.user?.email,
             name: user?.user?.displayName,
             image: user?.user?.photoURL,
           });
 
           if (res.data.userInfo) {
-            console.log(res.data.userInfo);
             dispatch({
               type: 'USER_DATA',
               payload: {

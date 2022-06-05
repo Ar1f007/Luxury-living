@@ -10,12 +10,12 @@ export const Login = () => {
 
         <form>
           <FormRow>
-            <Input type="email" id="email" required />
+            <Input type="email" id="email" placeholder=" " autoComplete="off" />
             <Label htmlFor="email">Email Address</Label>
           </FormRow>
 
           <FormRow>
-            <Input type="password" id="password" required />
+            <Input type="password" id="password" placeholder=" " autoComplete="off" />
             <Label htmlFor="password">Password</Label>
           </FormRow>
 

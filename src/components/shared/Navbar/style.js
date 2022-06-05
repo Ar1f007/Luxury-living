@@ -53,7 +53,8 @@ export const Nav = styled.nav`
   }
 
   @media (min-width: 992px) {
-    .nav-toggle {
+    .nav-toggle,
+    .dropdown {
       display: none;
     }
 
@@ -87,7 +88,7 @@ export const Nav = styled.nav`
       color: #bfbfbf;
       background: #f2ebe9;
 
-      padding: 0.5rem 2.5rem;
+      padding: 0.5rem 1.5rem;
       letter-spacing: 0.15%;
       border-radius: 8px;
       transition: all 0.2s;

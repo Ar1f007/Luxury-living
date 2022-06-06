@@ -1,4 +1,5 @@
 import * as yup from 'yup';
+
 const schema = yup.object({
   name: yup.string().required('Name is required').max(30, 'Max length exceeded'),
   email: yup.string().email('Not a valid email address').required('Email is required'),

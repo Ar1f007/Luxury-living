@@ -34,7 +34,7 @@ export const Navbar = () => {
         </div>
 
         <div className="nav-links">
-          <NavLinks />
+          <NavLinks user={user} />
         </div>
 
         <div className="actions">{!user ? <Link to="/login">Login</Link> : <Dropdown />}</div>

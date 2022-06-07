@@ -68,7 +68,7 @@ export const Login = () => {
         {!error ? (
           <Title>Welcome! Login to your account</Title>
         ) : (
-          <ErrorMessage>{splitFirebaseErrorMsg(error.message)}</ErrorMessage>
+          <ErrorMessage text={splitFirebaseErrorMsg(error.message)} />
         )}
 
         <form onSubmit={handleSubmit(onSubmit)}>

@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import { Navbar, MobileMenu, RequireAuth } from './components';
-import { Dashboard, Home, Login, Register } from './pages';
+import { Dashboard, Home, Login, Register, BookingList, Book, Review } from './pages';
 
 function App() {
   return (
@@ -13,7 +13,11 @@ function App() {
         <Route path="/register" element={<Register />} />
 
         <Route element={<RequireAuth />}>
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/dashboard" element={<Dashboard />}>
+            <Route index element={<BookingList />} />
+            <Route path="book" element={<Book />} />
+            <Route path="review" element={<Review />} />
+          </Route>
         </Route>
       </Routes>
     </>

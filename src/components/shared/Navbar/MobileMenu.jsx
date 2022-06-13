@@ -27,7 +27,7 @@ export const MobileMenu = () => {
         <div className={`${showMenu ? 'menu-container show' : 'menu-container'}`}>
           <div className="menu-links z-50">
             <RiCloseLine className="close-menu-icon" onClick={() => toggleMenu()} />
-            <NavLinks />
+            <NavLinks user={user} />
 
             {user === null ? (
               <Link to="/login" className="action" onClick={() => toggleMenu()}>

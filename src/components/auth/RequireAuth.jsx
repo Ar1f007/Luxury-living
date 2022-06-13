@@ -12,7 +12,7 @@ export const RequireAuth = () => {
   }
 
   if (!user) {
-    return <Navigate to="/login" state={location.pathname} replace={true} />;
+    return <Navigate to="/login" state={{ path: location.pathname }} replace={true} />;
   }
 
   return <Outlet />;

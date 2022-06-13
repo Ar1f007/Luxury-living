@@ -2,7 +2,7 @@ import { createContext, useContext, useEffect, useReducer } from 'react';
 import reducer from './reducer';
 
 const INITIAL_VALUE = {
-  user: JSON.parse(localStorage.getItem('user')) || null,
+  user: localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')) : null,
 };
 
 const UserContext = createContext(INITIAL_VALUE);

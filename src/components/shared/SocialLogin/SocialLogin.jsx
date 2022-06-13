@@ -1,6 +1,6 @@
 import tw from 'twin.macro';
 import auth from '../../../config/firebase';
-import fetch from '../../../config/axios';
+import axios from '../../../config/axios';
 import useUserContext from '../../../context/userContext/userContext';
 
 import { BsFacebook } from 'react-icons/bs';
@@ -29,7 +29,7 @@ export const SocialLogin = () => {
     const fnc = async () => {
       try {
         if (user !== undefined) {
-          const res = await fetch.put('/users', {
+          const res = await axios.put('/users', {
             email: user?.user?.email,
             name: user?.user?.displayName,
             image: user?.user?.photoURL,

@@ -19,7 +19,7 @@ import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-fireb
 import auth from '../../config/firebase';
 import { alert, splitFirebaseErrorMsg } from '../../utils';
 import { ImSpinner2 } from 'react-icons/im';
-import fetch from '../../config/axios';
+import axios from '../../config/axios';
 import useUserContext from '../../context/userContext/userContext';
 
 export const Register = () => {
@@ -51,7 +51,7 @@ export const Register = () => {
     const sendData = async () => {
       if (user && userCredentials) {
         console.log(userCredentials);
-        const res = await fetch.put('/users', { ...userCredentials });
+        const res = await axios.put('/users', { ...userCredentials });
 
         if (res.data.userInfo) {
           dispatch({

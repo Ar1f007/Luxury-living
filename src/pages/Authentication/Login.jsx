@@ -17,7 +17,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import loginSchema from '../../validation/loginSchema';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { splitFirebaseErrorMsg } from '../../utils';
-import fetch from '../../config/axios';
+import axios from '../../config/axios';
 import auth from '../../config/firebase';
 import useUserContext from '../../context/userContext/userContext';
 import { ImSpinner2 } from 'react-icons/im';
@@ -51,10 +51,12 @@ export const Login = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch.post('/users/login', { email });
-      dispatch({ type: 'USER_DATA', payload: { user: res.data.userInfo } });
+      const res = await axios.post('/users/login', { email });
 
-      navigate(state?.path || '/');
+      if (res) {
+        dispatch({ type: 'USER_DATA', payload: { user: res.data.userInfo } });
+        navigate(state?.path || '/');
+      }
     };
 
     if (user) {

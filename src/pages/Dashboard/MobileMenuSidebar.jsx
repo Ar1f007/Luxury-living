@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import links from '../../utils/userDashboardLinks';
+import userLinks from '../../utils/userDashboardLinks';
+import adminLinks from '../../utils/adminDashboardLink';
 
 import { Link, useLocation } from 'react-router-dom';
 import { useId } from 'react';
@@ -23,15 +24,28 @@ export const MobileMenuSidebar = ({ user, setShowSidebar }) => {
           {/*  X - icon for closing menu */}
           <RiCloseLine className="w-6 h-6 absolute right-2 top-1" onClick={() => handleClick()} />
 
-          {/* Dashboard Menu links */}
-          {links.map((link) => (
-            <li key={`${id}-${link.name}`} onClick={() => handleClick()}>
-              <Link to={link.path} className={pathMatched(link.path) ? 'active' : ''}>
-                <i>{<link.icon className="w-5 h-5" />}</i>
-                <span>{link.name}</span>
-              </Link>
-            </li>
-          ))}
+          {/* Dashboard Menu links for user */}
+          {user &&
+            user.role === 'user' &&
+            userLinks.map((link) => (
+              <li key={`${id}-${link.name}`} onClick={() => handleClick()}>
+                <Link to={link.path} className={pathMatched(link.path) ? 'active' : ''}>
+                  <i>{<link.icon className="w-5 h-5" />}</i>
+                  <span>{link.name}</span>
+                </Link>
+              </li>
+            ))}
+
+          {user &&
+            user.role === 'admin' &&
+            adminLinks.map((link) => (
+              <li key={`${id}-${link.name}`} onClick={() => handleClick()}>
+                <Link to={link.path} className={pathMatched(link.path) ? 'active' : ''}>
+                  <i>{<link.icon className="w-5 h-5" />}</i>
+                  <span>{link.name}</span>
+                </Link>
+              </li>
+            ))}
         </ul>
       </Overlay>
     </Container>

@@ -1,12 +1,13 @@
 import { Outlet, Link, useLocation } from 'react-router-dom';
-import tw from 'twin.macro';
 import { HiOutlineMenuAlt1 } from 'react-icons/hi';
 import { useState } from 'react';
-import styled from 'styled-components';
-
-import links from '../../utils/userDashboardLinks';
 import { useId } from 'react';
 import { MobileMenuSidebar } from './MobileMenuSidebar';
+
+import styled from 'styled-components';
+import tw from 'twin.macro';
+import userLinks from '../../utils/userDashboardLinks';
+import adminLinks from '../../utils/adminDashboardLink';
 import useUserContext from '../../context/userContext/userContext';
 
 export const Dashboard = () => {
@@ -27,19 +28,38 @@ export const Dashboard = () => {
 
       {showSidebar && <MobileMenuSidebar user={user} setShowSidebar={setShowSidebar} />}
 
-      {/* Sidebar on big screen */}
-      <Sidebar>
-        <Ul>
-          {links.map((link) => (
-            <Li key={`${id}-${link.name}`}>
-              <Link className={pathMatched(link.path) ? 'active' : ''} to={link.path}>
-                <i>{<link.icon className="w-5 h-5" />}</i>
-                <span>{link.name}</span>
-              </Link>
-            </Li>
-          ))}
-        </Ul>
-      </Sidebar>
+      {/* Sidebar on big screen for users */}
+      {user && user.role === 'user' && (
+        <Sidebar>
+          <Ul>
+            {userLinks.map((link) => (
+              <Li key={`${id}-${link.name}`}>
+                <Link className={pathMatched(link.path) ? 'active' : ''} to={link.path}>
+                  <i>{<link.icon className="w-5 h-5" />}</i>
+                  <span>{link.name}</span>
+                </Link>
+              </Li>
+            ))}
+          </Ul>
+        </Sidebar>
+      )}
+
+      {/* Sidebar on big screen for admin */}
+
+      {user && user.role === 'admin' && (
+        <Sidebar>
+          <Ul>
+            {adminLinks.map((link) => (
+              <Li key={`${id}-${link.name}`}>
+                <Link className={pathMatched(link.path) ? 'active' : ''} to={link.path}>
+                  <i>{<link.icon className="w-5 h-5" />}</i>
+                  <span>{link.name}</span>
+                </Link>
+              </Li>
+            ))}
+          </Ul>
+        </Sidebar>
+      )}
 
       {/* Nested content goes here */}
       <MainSection>

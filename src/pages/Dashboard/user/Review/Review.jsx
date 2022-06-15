@@ -1,5 +1,5 @@
 import tw from 'twin.macro';
-import { Button } from '../../../components';
+import { Button } from '../../../../components';
 // import { AiOutlineStar, AiFillStar } from 'react-icons/ai';
 export const Review = () => {
   return (

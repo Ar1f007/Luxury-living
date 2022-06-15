@@ -29,7 +29,7 @@ export const Form = () => {
         <Textarea placeholder="Message" id="message"></Textarea>
       </div>
 
-      <Button type="submit" text="send message" />
+      <Button type="submit" text="send message" variant="small" place="center" />
     </Container>
   );
 };

@@ -13,12 +13,13 @@ import {
 import { Divider, ErrorMessage, SocialLogin } from '../../components';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import registerSchema from '../../validation/registerSchema';
 import { useEffect, useState } from 'react';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
-import auth from '../../config/firebase';
 import { alert, splitFirebaseErrorMsg } from '../../utils';
 import { ImSpinner2 } from 'react-icons/im';
+
+import registerSchema from '../../validation/registerSchema';
+import auth from '../../config/firebase';
 import axios from '../../config/axios';
 import useUserContext from '../../context/userContext/userContext';
 

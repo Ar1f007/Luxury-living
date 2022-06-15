@@ -10,9 +10,7 @@ const instance = axios.create({
 });
 
 instance.interceptors.response.use(
-  (response) => {
-    return response;
-  },
+  (response) => response,
   (error) => {
     const {
       status,
@@ -35,7 +33,7 @@ instance.interceptors.response.use(
         break;
 
       default:
-        Promise.reject(error);
+        alert('error', 'Something went wrong');
     }
   }
 );
